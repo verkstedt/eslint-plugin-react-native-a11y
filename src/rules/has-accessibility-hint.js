@@ -23,14 +23,18 @@ module.exports = {
 
   create: (context: ESLintContext) => ({
     JSXOpeningElement: (node: JSXOpeningElement) => {
-      if (
-        hasProp(node.attributes, 'accessibilityLabel') &&
-        !hasProp(node.attributes, 'accessibilityHint')
-      ) {
-        context.report({
-          node,
-          message: 'has accessibilityLabel prop but no accessibilityHint',
-        });
+      if (!hasProp('accessibilityHint')) {
+        if (hasProp(node.attributes, 'accessibilityLabel')) {
+          context.report({
+            node,
+            message: 'has accessibilityLabel prop but no accessibilityHint',
+          });
+        } else if (hasProp(node.attributes, 'aria-label')) {
+          context.report({
+            node,
+            message: 'has aria-label prop but no accessibilityHint',
+          });
+        }
       }
     },
   }),

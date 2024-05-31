@@ -4,8 +4,8 @@ Ensures that Touchable* components have appropriate props to communicate with as
 
 The rule will trigger when a Touchable* component does not have **any** of the following props:-
 
-- `accessibiltyRole`
-- `accessibilityLabel`
+- `accessibiltyRole` or `role`
+- `accessibilityLabel` or `aria-label`
 - `accessibilityActions`
 
 In some cases, fixing this may then trigger other rules for related props (e.g. if you add `accessibilityActions` to fix this but are missing `onAccessibilityAction`)
