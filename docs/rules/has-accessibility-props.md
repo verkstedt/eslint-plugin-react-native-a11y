@@ -12,6 +12,7 @@ Touchable components are one of:
 - `TouchableNativeFeedback`
 - `TouchableBounce`
 - `Touchable` (from [react-native-platform-touchable](https://github.com/react-community/react-native-platform-touchable))
+- `Pressable`
 
 ### References
 
