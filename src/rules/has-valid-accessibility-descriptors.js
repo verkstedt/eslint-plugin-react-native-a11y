@@ -45,15 +45,6 @@ module.exports = {
           context.report({
             node,
             message: errorMessage,
-            fix: (fixer) => {
-              return fixer.insertTextAfterRange(
-                // $FlowFixMe
-                node.name.range,
-                isTouchable(node, context)
-                  ? ' accessibilityRole="button"'
-                  : ' accessibilityLabel="Text input field"'
-              );
-            },
           });
         }
       }
