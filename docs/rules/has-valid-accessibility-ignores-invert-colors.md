@@ -36,7 +36,7 @@ By default, the rule will only check `<Image />`.
 
 If you would like to check additional components which might require `accessibilityIgnoresInvertColors`, you can pass an options object which contains `invertableComponents` in your ESLint config.
 
-`invertableComponents` should be an Array of component names as strings.
+`invertableComponents` should be an Array of component names as strings or regular expressions.
 
 ```js
 "react-native-a11y/has-valid-accessibility-ignores-invert-colors": [
