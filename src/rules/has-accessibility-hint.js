@@ -23,7 +23,7 @@ module.exports = {
 
   create: (context: ESLintContext) => ({
     JSXOpeningElement: (node: JSXOpeningElement) => {
-      if (!hasProp('accessibilityHint')) {
+      if (!hasProp(node.attributes, 'accessibilityHint')) {
         if (hasProp(node.attributes, 'accessibilityLabel')) {
           context.report({
             node,
