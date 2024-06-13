@@ -1,3 +1,13 @@
+# @verkstedt/eslint-plugin-react-native-a11y
+
+Quick fork of [FormidableLabs’s plugin](https://github.com/FormidableLabs/eslint-plugin-react-native-a11y).
+
+👷 Work in progress. We plan to bring our changes upstream after they are ironed out.
+
+What fallows is the original README.
+
+---
+
 [![Eslint-plugin-react-native-a11y — Formidable, We build the modern web](https://raw.githubusercontent.com/FormidableLabs/eslint-plugin-react-native-a11y/master/eslint-plugin-react-native-a11y-Hero.png)](https://formidable.com/open-source/)
 
 
