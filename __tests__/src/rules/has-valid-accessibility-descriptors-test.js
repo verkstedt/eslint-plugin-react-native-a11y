@@ -20,7 +20,7 @@ const ruleTester = new RuleTester();
 
 const expectedError = {
   message:
-    'Missing a11y props. Expected one of: accessibilityRole OR role OR BOTH accessibilityLabel + accessibilityHint OR BOTH accessibilityActions + onAccessibilityAction',
+    'Missing a11y props. Expected one of: accessibilityRole OR role OR BOTH accessibilityLabel OR aria-label + accessibilityHint OR BOTH accessibilityActions + onAccessibilityAction',
   type: 'JSXOpeningElement',
 };
 
