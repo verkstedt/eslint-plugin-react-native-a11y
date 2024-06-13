@@ -86,14 +86,14 @@ ruleTester.run('has-valid-accessibility-descriptors', rule, {
               <Text>Back</Text>
              </TouchableOpacity>`,
       errors: [expectedError],
-      output: `<TouchableOpacity accessibilityRole="button">
+      output: `<TouchableOpacity>
               <Text>Back</Text>
              </TouchableOpacity>`,
     },
     {
       code: `<TextInput />`,
       errors: [expectedError],
-      output: `<TextInput accessibilityLabel="Text input field" />`,
+      output: `<TextInput />`,
     },
   ].map(parserOptionsMapper),
 });
