@@ -48,7 +48,8 @@ module.exports = {
       if (
         isTouchable(node, context) &&
         hasAnyProp(node.attributes, deprecatedProps) &&
-        ((hasProp(node.attributes, 'accessibilityRole') || hasProp('role')) ||
+        (hasProp(node.attributes, 'accessibilityRole') ||
+          hasProp('role') ||
           !hasEveryProp(node.attributes, deprecatedProps)) &&
         getLiteralPropValue(getProp(node.attributes, 'accessible')) !== false
       ) {

@@ -64,7 +64,9 @@ module.exports = {
         const type = elementType(openingElement);
 
         if (
-          elementsToCheck.some(name => name instanceof RegExp ? type.match(name) : type === name) &&
+          elementsToCheck.some((name) =>
+            name instanceof RegExp ? type.match(name) : type === name
+          ) &&
           !hasValidIgnoresInvertColorsProp(openingElement) &&
           children.length === 0
         ) {
